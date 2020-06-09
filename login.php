@@ -3,7 +3,7 @@ session_start();
 
 $email = $_POST['email'];
 $password = $_POST['password'];
-$con = mysqli_connect("localhost", "ki404616_admin", "kastle2020", "ki404616_user_data");
+$con = mysqli_connect("localhost", "", "", "ki404616_user_data");
 $hashed_password =  md5($_POST['password']);
 
 
