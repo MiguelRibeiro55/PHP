@@ -1,0 +1,1 @@
+insert into aluger(id_utilizador, id_bot) select id from data_users  and select id from Bots 
