@@ -8,7 +8,7 @@ if (isset($_POST['register_btn'])) {
 
     //INSERT INTO data_users (username, email, password, password2) VALUES ('a', 'a@a', 'a', 'a')
     if ($password == $password2) {
-        $link = mysqli_connect("localhost", "ki404616_admin", "kastle2020", "ki404616_user_data");
+        $link = mysqli_connect("localhost", "", "", "ki404616_user_data");
         $hashed_password =  md5($_POST["password"]);
 
         $query = mysqli_query( "SELECT * FROM data_users WHERE `username`='.$username'");
